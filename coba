@@ -36,27 +36,22 @@
 <!-- Facebook Open Graph -->
 <b:if cond='data:blog.pageType == &quot;item&quot;'><meta expr:content='data:blog.pageName' property='og:title'/><meta expr:content='data:blog.canonicalUrl' property='og:url'/><meta content='article' property='og:type'/>
 <b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' property='og:description'/><b:else/>
-<meta expr:content='&quot;Update Anime &quot; + data:blog.pageName + &quot; download now in &quot; + data:blog.title + &quot;&quot;' property='og:description'/>
+<meta expr:content='&quot;Update manga &quot; + data:blog.pageName + &quot; download now in &quot; + data:blog.title + &quot;&quot;' property='og:description'/>
 </b:if></b:if>
 <meta expr:content='data:blog.title' property='og:site_name'/>
 <b:if cond='data:blog.url == data:blog.homepageUrl'><meta content='website' property='og:type'/>
 <b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' property='og:description'/><b:else/>
-<meta expr:content='&quot;Please visit &quot; + data:blog.pageTitle + &quot; for watch and download anime new episode.&quot;' property='og:description'/></b:if></b:if>
+<meta expr:content='&quot;Silahkan Kunjungi &quot; + data:blog.pageTitle + &quot; untuk membaca manga terbaru berbahasa indonesia.&quot;' property='og:description'/></b:if></b:if>
 <b:if cond='data:blog.postImageUrl'><meta expr:content='data:blog.postImageUrl' property='og:image'/><b:else/><b:if cond='data:blog.postImageThumbnailUrl'><meta expr:content='data:blog.postThumbnailUrl' property='og:image'/><b:else/><meta expr:content='data:blog.blogspotFaviconUrl' property='og:image'/></b:if></b:if>
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[
-/*--
-Blogger Template Style
-Theme Name			: Yamanga Blogger Template
-Theme Designer		: Frozen
-Theme Url			: http://cmonfrozen.blogspot.com
 
 --*/
 /* CSS LAYOUT */
 body#layout ul{display:none;}
 body#layout select{display:none;}
 body#layout #header{}
-body#layout #main-wrapper {overflow: hidden;float: left;width: 500px;margin-left: 10px;}
+body#layout #main-wrapper {overflow: hidden;float: left;width: 500px; height: 100%; margin-left: 10px;}
 body#layout #sidebar-wrapper{float:right;width:270px;}
 /* CSS RESET */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}ul{list-style:none;}
@@ -97,7 +92,7 @@ h1, h2, h3, h4, h5{font-family:Titillium Web;font-weight:700;}h1{font-size:2em;m
 /*<![CDATA[*/
 /* CSS Body */
 body{
-background: #F2F2F2;
+background: #222;
 margin:0;
 color:#212121;
 font:normal normal 13px "Open Sans", Arial, sans-serif;
@@ -112,7 +107,7 @@ overflow-x:hidden;
 #header-wrapper{margin:0 auto;float:left;max-width:230px;}
 .header h1.title,.header h2.title{color:#333;margin:0;padding:0;font:normal 400 27px "Open Sans",Arial,sans-serif;}
 .header h1.title a,.header h2.title a{color:#fff;}
-.header h1.title a:hover,.header h2.title a:hover{color:#E87162;text-shadow:0 0 2px #505050;}
+.header h1.title a:hover,.header h2.title a:hover{color:#0066FF;text-shadow:0 0 2px #505050;}
 .header .description{margin:0;padding:0;font-size:10px;color:#999;}
 /* OUTER WRAPPER */
 #outer-top{padding:15px;background:#151515}
@@ -121,10 +116,10 @@ overflow-x:hidden;
 #nav-wrapper ul{margin:0;padding:0;}
 #nav-wrapper li{float:left;margin:0;list-style:none;margin-right:1px;-webkit-transition:all .7s;-moz-transition:all .7s;-o-transition:all .7s;transition:all .7s;}
 #nav-wrapper li a i{padding-right:5px;}
-#nav-wrapper li a{color:#fff;display:inline-block;padding:0 14px;}
-#nav-wrapper li:first-child a{background-color:#E24A37;border-radius:3px 0 0 3px;}
+#nav-wrapper li a{color:#FFF;display:inline-block;padding:0 14px;}
+#nav-wrapper li:first-child a{background-color:#0066FF;border-radius:3px 0 0 3px;}
 #nav-wrapper li:last-child:hover a{border-radius:0 3px 3px 0;}
-#nav-wrapper li:hover a{background-color:#E24A37;}
+#nav-wrapper li:hover a{background-color:#0066FF;}
 #search_form{position:relative;background:#222;padding:9px 12px;border-radius:3px;color:#fff;margin-left:5px;}
 #search_form label{cursor:pointer;}
 #search_form .onput{position:absolute;left:0;top:0;width:25px;height:100%;-webkit-appearance:none;outline:0;cursor:pointer;margin:0;}
@@ -145,7 +140,7 @@ overflow-x:hidden;
 .genre-type{position:relative;z-index:15;padding:20px 0 15px;}
 .genre-type a:hover{background:#222;}
 .genre-type a{background-color:#E24A37;padding:0 12px;display:inline-block;margin-bottom:5px;border-radius:2px;}
-.infoblog{background-color:#FBF0B0;padding:15px;border:1px solid #E6D77B;color:#3E3619;margin-bottom:15px;}
+.infoblog{background-color:#1E90FF;padding:15px;border:1px solid #0066FF;color:#3E3619;margin-bottom:15px;}
 .infoblog h3{margin:0 0 10px;text-align:center;font-size:15px;text-transform:uppercase;}
 .infoblog p{margin-bottom:15px;line-height:1.6;}
 .infoblog p:last-child{margin-bottom:0;}
@@ -173,16 +168,16 @@ h2.entry-title:before{content:"";background:url(http://3.bp.blogspot.com/-Q1qOlP
 .ymr-item .entry-title{padding-left:20px!important;}
 .ymr-date{font-size:11px;color:#999;font-weight:400;display:block;padding-left:5px;margin-bottom:5px;}
 .ymr-date:before{content:"";background-image:url(http://4.bp.blogspot.com/-TiKjWpXBebI/VeP-QhX7rHI/AAAAAAAAEig/11sERsOsDXw/s1600/id_f.png);background-position:center;background-repeat:no-repeat;display:inline-block;left:-4px;margin-right:5px;position:relative;top:0;height:7px;width:11px;background-size:100%;}
-.mg_intop{background:#FF6B58;position:relative;padding:20px 0 30px;overflow:hidden;box-shadow:inset 0 -30px 30px -35px rgba(0,0,0,0.2);text-align:center;color:rgba(255,255,255,0.8);}
+.mg_intop{background:#0066FF;position:relative;padding:20px 0 30px;overflow:hidden;box-shadow:inset 0 -30px 30px -35px rgba(0,0,0,0.2);text-align:center;color:rgba(0,0,0,0.8);}
 .mg_intop .fcenter{z-index:50;}
 .mg_intop .breadcrumbs a{color:rgba(0,0,0,0.5);font-size:13px;font-family:Titillium Web;text-transform:uppercase;font-weight:700;font-size:12px;font-family:Segoe UI,sans-serif;}
 .mg_intop .breadcrumbs i{color:rgba(0,0,0,0.3);padding:0 5px;}
 .mg_intop h1{margin:0 0 5px;font-size:28px;}
-.mg_intop:after{content:"";background:url(http://4.bp.blogspot.com/-uCvqypLwH8A/VeV8F3H9CwI/AAAAAAAAElI/FgPlZg_b0D4/s1600/tp_slide.png)no-repeat center;position:absolute;left:0;width:100%;height:100%;top:0;opacity:.05;}
+.mg_intop:after{content:"";background:url(https://3.bp.blogspot.com/-Es1W2ehvPHk/WLpoOQ2mdUI/AAAAAAAAAr4/nl_gG47Q0P8qRc-lnfStehrn-xfjVk8QACLcB/s1600/fdsfafssdfd.png)no-repeat center;position:absolute;left:0;width:100%;height:100%;top:0;opacity:.05;}
 #share-menu{display:none;margin:9px 0 0;}
 .sharethis{position:relative;margin-top:10px;margin-bottom:10px;}
-.share > a,.pl{border:1px solid #ddd;padding:5px;width:120px;border-radius:3px;font-size:13px;color:#666;display:inline-block;margin-bottom:3px;text-align:center;background-color:#fff;}
-.share > a:hover,.pl:hover{border:1px solid #aaa;}
+.share > a,.pl{border:1px solid #ddd;padding:5px;width:120px;border-radius:3px;font-size:13px;color:#111111;display:inline-block;margin-bottom:3px;text-align:center;background-color:#fff;}
+.share > a:hover,.pl:hover{border:1px solid #111111;}
 .mg-alist tbody tr td a:hover{color:#F56855;}
 .share > a:nth-child(1){color:#dc4a36;}
 .share > a:nth-child(2){color:#5772bb;}
@@ -227,14 +222,14 @@ h2.entry-title:before{content:"";background:url(http://3.bp.blogspot.com/-Q1qOlP
 /*<![CDATA[*/
 /* Outer Wrap */
 #outer-wrapper{width:1020px;margin:25px auto;position:relative;background-color:#fff;padding:15px;border:1px solid #dedede;box-shadow:0 0 2px -1px #ccc;}
-#main-wrapper{float:left;margin-right:35px;width:650px;}
+#main-wrapper{float:left;margin-right:35px;width:650px; height:100%;}
 #sidebar-wrapper{float:left;width:300px;}
 .post{margin-bottom:10px;border-bottom:1px dashed #E2E2E2;padding-bottom:8px;}
 .nbs-flexisel-nav-left,.nbs-flexisel-nav-right{width:25px;height:25px;position:absolute;cursor:pointer;z-index:100;background-size:100%;}
 .nbs-flexisel-nav-left{left:10px;background:url(http://9bitstudios.github.io/flexisel/images/button-previous.png) no-repeat;}
 .nbs-flexisel-nav-right{right:5px;background:url(http://9bitstudios.github.io/flexisel/images/button-next.png) no-repeat;}
-#mangakun{background:#F2EEEA;background:#F5F1ED;background:#F97867;background:#FF6B58;position:relative;padding:20px 0;max-height:240px;overflow:hidden;box-shadow:inset 0 -30px 30px -35px rgba(0,0,0,0.2);}
-#mangakun:after{content:"";background:url(http://4.bp.blogspot.com/-uCvqypLwH8A/VeV8F3H9CwI/AAAAAAAAElI/FgPlZg_b0D4/s1600/tp_slide.png)no-repeat center;position:absolute;left:0;width:100%;height:100%;top:0;opacity:.05;}
+#mangakun{background:#0066FF;background:#0066FF;background:#0066FF;background:#0066FF;position:relative;padding:20x 0;max-height:240px;overflow:hidden;box-shadow:inset 0 -30px 30px -35px rgba(0,0,0.2,0.2);}
+#mangakun:after{content:"";background:url(https://3.bp.blogspot.com/-Es1W2ehvPHk/WLpoOQ2mdUI/AAAAAAAAAr4/nl_gG47Q0P8qRc-lnfStehrn-xfjVk8QACLcB/s1600/fdsfafssdfd.png )no-repeat center;position:absolute;left:0;width:100%;height:100%;top:0;opacity:0.15;}
 #mangakun .fcenter{overflow:hidden;z-index:100;}
 #mangakun li{float:left;max-height:185px;cursor:pointer;position:relative;overflow:hidden;width:1.5%;}
 #mangakun ul{position:relative;width:9999px;margin:0;padding:0;list-style-type:none;text-align:center;}
@@ -244,7 +239,7 @@ h2.entry-title:before{content:"";background:url(http://3.bp.blogspot.com/-Q1qOlP
 .nbs-flexisel-container{position:relative;max-width:100%;}
 .nbs-flexisel-inner{overflow:hidden;float:left;width:100%;}
 #blog-pager .loads{background:#222;padding:10px 10px 11px;text-align:center;color:#fff;display:block;border-radius:3px;letter-spacing:.1px;text-transform:uppercase;font-weight:700;}
-#blog-pager .loads:hover{background:#E24A37;}
+#blog-pager .loads:hover{background:#0066FF;}
 .fam{background-position:center;background-repeat:no-repeat;display:inline-block;margin-left:5px;position:relative;top:2px;height:11px;width:16px;}
 .fam-id{background-image:url(http://4.bp.blogspot.com/-TiKjWpXBebI/VeP-QhX7rHI/AAAAAAAAEig/11sERsOsDXw/s1600/id_f.png);}
 .fam-en{background-image:url(http://4.bp.blogspot.com/-xfVf8v4qUEA/VeQCjMCty4I/AAAAAAAAEi8/tiFgCPhALOY/s1600/en_f.png);}
@@ -268,7 +263,7 @@ h2.entry-title:before{content:"";background:url(http://3.bp.blogspot.com/-Q1qOlP
 </style></b:if>
 <style type='text/css'>
 /*<![CDATA[*/
-@media screen and (min-width:640px)and (max-width:1040px){#outer-wrapper{width:100%}.fcenter{width:95%}#mangakun li{max-height:155px}}@media screen and (min-width:770px)and (max-width:876px){#header-wrapper{max-width:190px}#nav-wrapper li a{padding:0 9px}.search_input{width:460px}}@media screen and (min-width:640px)and (max-width:770px){#header-wrapper{float:none;max-width:50%;margin-bottom:6px}#search_form{width:100%;margin-bottom:15px}#nav-wrapper{float:none;clear:both}#outer-top{padding:15px 0}.search_input{width:100%}#search_form .onput:checked ~ form{display:block;left:0;right:0;width:100%}.genre-type a{padding:0 10px;line-height:1.9}.post-options{margin-top:15px}.dte-nav{z-index:15;position:fixed;top:0;right:0;left:0;margin:0!important;background-color:#fff;padding:5px!important}}@media screen and (max-width:640px){#header-wrapper{float:none;max-width:70%;margin-bottom:6px}#search_form{width:100%;margin-bottom:15px;height:38px}#nav-wrapper{float:none;clear:both}#outer-top{padding:15px 0}.search_input{width:100%}#search_form .onput:checked ~ form{display:block;left:0;right:0;width:92%}.genre-type a{padding:0 8px;line-height:1.6}#outer-wrapper{width:98%}.fcenter{width:98%}#sidebar-wrapper{width:100%}#mangakun li{max-height:155px}#search_form label{cursor:pointer;right:0;top:0;line-height:38px;position:absolute;width:35px;text-align:center}#search_form .onput{right:0;left:inherit;height:38px;width:35px}#nav-wrapper ul{display:none}#tinynav1{display:block;padding:8px;width:100%;background-color:#222;border:0;color:#fff;outline:0}#outer-wrapper{width:100%}.post-options{margin-top:15px}.dte-nav{z-index:15;position:fixed;top:0;right:0;left:0;margin:0!important;background-color:#fff;padding:5px!important}}
+@media screen and (min-width:640px)and (max-width:1040px){#outer-wrapper{width:100% ;padding:15px;float : center}.fcenter{width:95%}#mangakun li{max-height:155px}}@media screen and (min-width:770px)and (max-width:876px){#header-wrapper{max-width:190px}#nav-wrapper li a{padding:0 9px}.search_input{width:460px}}@media screen and (min-width:640px)and (max-width:770px){#header-wrapper{float:none;max-width:50%;margin-bottom:6px}#search_form{width:100%;margin-bottom:15px}#nav-wrapper{float:none;clear:both}#outer-top{padding:15px 0}.search_input{width:100%}#search_form .onput:checked ~ form{display:block;left:0;right:0;width:100%}.genre-type a{padding:0 10px;line-height:1.9}.post-options{margin-top:15px}.dte-nav{z-index:15;position:fixed;top:0;right:0;left:0;margin:0!important;background-color:#fff;padding:5px!important}}@media screen and (max-width:640px){#header-wrapper{float:none;max-width:70%;margin-bottom:6px}#search_form{width:100%;margin-bottom:15px;height:38px}#nav-wrapper{float:none;clear:both}#outer-top{padding:15px 0}.search_input{width:100%}#search_form .onput:checked ~ form{display:block;left:0;right:0;width:92%}.genre-type a{padding:0 8px;line-height:1.6}#outer-wrapper{width:98%}.fcenter{width:98%}#sidebar-wrapper{width:100%}#mangakun li{max-height:155px}#search_form label{cursor:pointer;right:0;top:0;line-height:38px;position:absolute;width:35px;text-align:center}#search_form .onput{right:0;left:inherit;height:38px;width:35px}#nav-wrapper ul{display:none}#tinynav1{display:block;padding:8px;width:100%;background-color:#222;border:0;color:#fff;outline:0}#outer-wrapper{width:100%}.post-options{margin-top:15px}.dte-nav{z-index:15;position:fixed;top:0;right:0;left:0;margin:0!important;background-color:#fff;padding:5px!important}}
 /*]]>*/
 </style>
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'/>
@@ -295,15 +290,15 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <div id='outer-top'><div class='fcenter'>
 <header id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader' role='banner'>
 <b:section class='header' id='header_widget' maxwidgets='1' showaddelement='no'>
-  <b:widget id='Header1' locked='true' title='Asal (Header)' type='Header' version='1'>
+  <b:widget id='Header1' locked='true' title='AoManga (Header)' type='Header' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-4Vy3TKKgQi4/Vq7hOXQPXmI/AAAAAAAAAXQ/44nG6qtGmK0/s1600-r/333852.png</b:widget-setting>
-      <b:widget-setting name='displayHeight'>563</b:widget-setting>
-      <b:widget-setting name='sectionWidth'>753</b:widget-setting>
-      <b:widget-setting name='useImage'>true</b:widget-setting>
+      <b:widget-setting name='displayUrl'/>
+      <b:widget-setting name='displayHeight'>0</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+      <b:widget-setting name='useImage'>false</b:widget-setting>
       <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
       <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-      <b:widget-setting name='displayWidth'>1000</b:widget-setting>
+      <b:widget-setting name='displayWidth'>0</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:useImage'>
@@ -368,9 +363,9 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <ul>
 <li><a expr:href='data:blog.homepageUrl'><span itemprop='name'><i class='fa fa-home'/> Home</span></a></li>
 <li><a href='/search/label/?max-results=25'><span itemprop='name'><i class='fa fa-bars'/> Last Release</span></a></li>
-<li><a href='/p/manga-list.html'><span itemprop='name'><i class='fa fa-book'/> Manga List</span></a></li>
-<li><a onclick='feelingLucky();' style='cursor:pointer;'><span itemprop='name'><i class='fa fa-random'/> Random</span></a></li>
-<li><a href='/p/staff.html'><span itemprop='name'><i class='fa fa-users'/> Staff</span></a></li>
+<li><a href='http://aomanga-kun.blogspot.com/p/blog-page_6.html'><span itemprop='name'><i class='fa fa-book'/> Manga List</span></a></li>
+<li><a href='http://aomanga-kun.blogspot.co.id/p/blog-page.html'><span itemprop='name'><i class='fa fa-random'/> Genre</span></a></li>
+<li><a href='http://aomanga-kun.blogspot.com/p/contact.html'><span itemprop='name'><i class='fa fa-users'/> contact </span></a></li>
 </ul>
 <span class='clear'/>
 </nav>
@@ -379,21 +374,25 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <nav id='mangakun'><div class='fcenter'>
 <ul>
-<li><a href='#'>
-<img alt='Download Charlotte Subtitle Indonesia' src='http://3.bp.blogspot.com/-k1C_S8XdfT0/VZihWAJE2gI/AAAAAAAAAUg/wbiIqL2XCPE/s1600/74683.jpg' title='Charlotte'/>
-<h4>Charlotte</h4>
+<li><a href='http://aomanga-kun.blogspot.co.id/p/uchi-no-musume-no-tame-naraba-ore-wa.html'>
+<img alt='Uchi no Musume no Tame Naraba Ore wa Moshikashitara Mao mo Taoseru Kamo Shirenai ' src='http://funmanga.com/uploads/chapters/cover/tbn/1477614633_198x0.jpeg' title='Uchi no Musume no Tame Naraba Ore wa Moshikashitara Mao mo Taoseru Kamo Shirenai'/>
+<h4>Uchi no Musume no Tame Naraba Ore wa Moshikashitara Mao mo Taoseru Kamo Shirenai</h4>
+</a></li>
+<li><a href='http://aomanga-kun.blogspot.com/p/toaru-ossan-no-vrmmo-katsudoki-judul_7.html'>
+<img alt='toaru ossan no vrmmo katsudoki' src='http://st.cdjapan.co.jp/pictures/l/16/16/NEOBK-1814269.jpg' title='toaru ossan no vrmmo katsudoki'/>
+<h4>toaru ossan no vrmmo katsudoki</h4>
 </a></li>
 <li><a href='#'>
-<img alt='Code Geass: Boukoku no Akito 3 - Kagayaku Mono Ten yori Otsu Subtitle Indonesia' src='http://3.bp.blogspot.com/-hDnjbcD3JgA/Va9jx_k5P2I/AAAAAAAAAYA/kbswxH9bnm0/s1600/72698.jpg' title='Code Geass'/>
-<h4>Code Geass: Boukoku no Akito 3 - Kagayaku Mono Ten yori Otsu</h4>
+<img alt='Naruto Gaiden' src='http://static.tvtropes.org/pmwiki/pub/images/narutogaiden.png' title='Download Naruto Gaiden'/>
+<h4>Naruto Gaiden</h4>
 </a></li>
-<li><a href='#'>
-<img alt='Download Chaos Dragon: Sekiryuu Seneki Subtitle Indonesia' src='http://3.bp.blogspot.com/-kQ9-ZTafOuA/VZs6P6Mr65I/AAAAAAAAAV8/KqB2d9Va4Lk/s1600/74375.jpg' title='Chaos Dragon'/>
-<h4>Chaos Dragon: Sekiryuu Seneki</h4>
+<li><a href='http://aomanga-kun.blogspot.co.id/p/goblin-slayer.html'>
+<img alt='Goblin Slayer' src='https://2.bp.blogspot.com/-ysOW8mOuaIc/WL6Ee0EpXiI/AAAAAAAAAxI/jz6YgmpVUnokl4LIiPzxHfSw3CdzoszJgCLcB/s1600/000%2Bcover%2Bvol%2B01.jpg' title='Chaos Dragon'/>
+<h4>Goblin Slayer</h4>
 </a></li>
-<li><a href='#'>
-<img alt='Download Overlord Subtitle Indonesia' src='http://3.bp.blogspot.com/-BS3cPeok_wM/VZx-oI2DYUI/AAAAAAAAAWk/4PqYGYkLq8A/s1600/74462.jpg' title='Overlord'/>
-<h4>Overlord</h4>
+<li><a href='http://aomanga-kun.blogspot.co.id/p/harapeko-no-marie.html'>
+<img alt='Harapeko No Marie' src='https://1.bp.blogspot.com/-2wEETeKBj1A/WL9z2fuTriI/AAAAAAAAA9U/Ct_bm_0Jw5QvkeSL8sYIewUMTmXoyPq2gCLcB/s1600/1.jpg' title='Harapeko No Marie'/>
+<h4>Harapeko No Marie</h4>
 </a></li>
 <li><a href='#'>
 <img alt='Download Akagami no Shirayukihime Subtitle Indonesia' src='http://2.bp.blogspot.com/-NfyzZp5uC64/VZuUEaLp-KI/AAAAAAAAAWM/z-4KwEfXHQI/s1600/74169.jpg' title='Akagami no Shirayukihime'/>
@@ -402,31 +401,7 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <li><a href='#'>
 <img alt='Chuunibyou demo Koi ga Shitai!' src='http://3.bp.blogspot.com/-Q2rzWr60OhY/VJKLJETKUDI/AAAAAAAADI4/JyijEdEgRMw/s1600/46931.jpg' title='Chuunibyou demo Koi ga Shitai'/>
 <h4>Chuunibyou demo Koi ga Shitai! </h4>
-</a></li>
-<li><a href='#'>
-<img alt='Denpa Onna to Seishun Otoko' src='http://3.bp.blogspot.com/-0PzqufTH0o0/VJKKppCXrpI/AAAAAAAADIo/RvlU_-yJvwA/s1600/59497.jpg' title='Denpa Onna to Seishun Otoko'/>
-<h4>Denpa Onna to Seishun Otoko</h4>
-</a></li>
-<li><a href='#'>
-<img alt='Download Dragon Ball Super' src='http://4.bp.blogspot.com/-ETmdWyym7Cs/VZn4hieSFiI/AAAAAAAAAVo/DhdXdKQ5bzI/s1600/74606.jpg' title='Dragon Boll'/>
-<h4>Dragon Ball Super</h4>
-</a></li>
-<li><a href='#'>
-<img alt='Download Classroom☆Crisis Subtitle Indonesia' src='http://3.bp.blogspot.com/-3Tnbqc8_Wj0/VZimdr3NsHI/AAAAAAAAAVI/NSt6_B2p0Ow/s1600/74397.jpg' title='Classroom Crisis'/>
-<h4>Classroom&#9734;Crisis</h4>
-</a></li>
-<li><a href='#'>
-<img alt='Download Rokka No Yuusha Subtitle Indonesia' src='http://3.bp.blogspot.com/-tD9qAlQuoAc/VZif7jmeL1I/AAAAAAAAAUU/19RnA_42kO0/s1600/74374.jpg' title='Rokko No Yuusha'/>
-<h4>Rokka No Yuusha</h4>
-</a></li>
-<li><a href='#'>
-<img alt='Download Joukamachi no Dandelion Subtitle Indonesia' src='http://4.bp.blogspot.com/-a0-CowLgD8w/VZijNFdw5OI/AAAAAAAAAUs/bUG74NefqC0/s1600/74494.jpg' title='Joukamachi no Dandelion'/>
-<h4>Joukamachi no Dandelion</h4>
-</a></li>
-<li><a href='#'>
-<img alt='Download Ushio to Tora Subtitle Indonesia' src='http://3.bp.blogspot.com/-1YSsq6z9TiE/VZilB48CQ0I/AAAAAAAAAU4/qC-8N4vZ_Ro/s1600/73692.jpg' title='Ushio no Tora'/>
-<h4>Ushio to Tora</h4>
-</a></li>				    	  	       	   	    	
+</a></li>	    	  	       	   	    	
 </ul>
   <div class='clear'/></div></nav></b:if></b:if>
 <div id='outer-wrapper'>
@@ -436,9 +411,8 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='infoblog'>
-  <h3>Welcome to <data:blog.title/></h3>
-  <p>The Japanese Ministry of Defense has an anti-paranormal special forces group called the Paranormal Disaster Countermeasure Headquarters. They&#39;re the ones responsible to protect Japanese soil and its people from supernatural and paranormal events</p>
-  <p>Gouda Takeo is a freshman in high school. (Both estimates) Weight: 120kg, Height: 2 meters. He spends his days peacefully with his super-popular-with-girls, yet insensitive childhood friend, Sunakawa. One morning, on the train to school, Takeo saves a girl, Yamato, from being molested by a pervert. Could this be the beginning of spring for Takeo?</p>
+  <h3>selamat datang di <data:blog.title/></h3>
+  <p>blog yang menyediakan komik-komik terbaru yang tersaji dalam bahasa indonesia dengan kualitas gambar yang baik dan jernih , selamat membaca dan menikmati komik yang telah disediakan. dan jangan lupa untuk membeli komik aslinya jika sudah rilis di daerah anda.</p>
 </div>
 <h3 class='mh'><i class='fa fa-bars'/> Recent Chapter List</h3></b:if></b:if>
 <b:section class='main' id='main' showaddelement='no'>
@@ -467,7 +441,7 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
     <b:includable id='main' var='top'>
   <b:if cond='data:mobile == &quot;false&quot;'>
     <!-- posts -->
-    <div class='blog-posts hfeed'>
+    <div class='blog-posts hfeed' style='height:100%'>
       <b:include data='top' name='status-message'/>
     <data:defaultAdStart/>
     <b:loop values='data:posts' var='post'>
@@ -624,11 +598,6 @@ var _0x81cc=["\x33\x20\x31\x6A\x28\x74\x29\x7B\x43\x28\x63\x20\x65\x3D\x74\x2E\x
 <div class='clear'/></div></div>
 <div class='fcenter fmrg'>
 <div class='post-options'>
-<div class='op-rl'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><i class='fa fa-tags'/> See Other Chapter</a></b:loop></b:if><div class='clear'/></div>
-<nav class='op-pagi'>
-<a class='prev' href='#'><i class='fa fa-angle-left'/> Prev</a>
-<a class='next' href='#'> Next <i class='fa fa-angle-right'/></a>
-</nav>
 <div class='clear'/></div>
 <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
 <data:post.body/>
@@ -764,10 +733,7 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <aside id='sidebar-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPSideBar' role='complementary'>
 <b:section class='sidebar' id='sidebar' preferred='yes'>
-  <b:widget id='HTML3' locked='false' title='Video of The Day' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'/>
-    </b:widget-settings>
+  <b:widget id='HTML3' locked='false' title='' type='HTML'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -798,10 +764,10 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
   </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='Popular Chapter' type='PopularPosts' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+      <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
       <b:widget-setting name='showThumbnails'>true</b:widget-setting>
       <b:widget-setting name='showSnippets'>true</b:widget-setting>
-      <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+      <b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
@@ -845,9 +811,9 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
       <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'>Goblin Slayer,Toaru Ossan no VRMMO Katsudouki,Uchi no Musume no Tame Naraba Ore wa Moshikashitara Mao mo Taoseru Kamo Shirenai,adventure,drama,fantasy,harapeko no marie,seinen</b:widget-setting>
+      <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
@@ -897,7 +863,7 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
       <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
       <b:widget-setting name='chronological'>false</b:widget-setting>
       <b:widget-setting name='showPosts'>true</b:widget-setting>
-      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+      <b:widget-setting name='frequency'>WEEKLY</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
@@ -967,7 +933,7 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
   </a>
 </b:includable>
   </b:widget>
-  <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+  <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
     <b:widget-settings>
       <b:widget-setting name='copyright'/>
     </b:widget-settings>
@@ -981,205 +947,7 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
     <b:include name='quickedit'/>
   </b:includable>
   </b:widget>
-  <b:widget id='HTML85' locked='false' title='' type='HTML'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='HTML64' locked='false' title='Services' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='Label2' locked='false' title='Categories' type='Label' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-      <b:loop values='data:labels' var='label'>
-        <li>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </li>
-      </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='HTML852' locked='false' title='PageNav Posts Number' type='HTML' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='content'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-      <b:if cond='data:content == &quot;&quot;'>
-        <script type='text/javascript'> 
-        //<![CDATA[
-        var pageNaviConf = {
-            perPage: 20,
-            numPages: 9,
-            firstText: 'First',
-            lastText: 'Last',
-            nextText: 'Next',
-            prevText: 'Prev'
-        }
-        $(window).bind("load", function() { 
-        $('.Label a,.box-title h2 a,.more-link,.intro .post-tag,.postags a,.ticker .post-tag,.tags a,.posts-link,.posts-title h2 a').each(function() {
-          var labelPage = $(this).attr('href');
-          $(this).attr('href',labelPage + '?max-results=20');
-        });
-        });
-         //]]>
-        </script>
-        <b:else/>
-        &lt;script type=&#39;text/javascript&#39;&gt; 
-        var pageNaviConf = {
-            perPage: <data:content/>,
-            numPages: 9,
-            firstText: &#39;First&#39;,
-            lastText: &#39;Last&#39;,
-            nextText: &#39;Next&#39;,
-            prevText: &#39;Prev&#39;
-        }
-        $(window).bind(&quot;load&quot;, function() { 
-        $(&#39;.Label a,.box-title h2 a,.more-link,.intro .post-tag,.postags a,.ticker .post-tag,.tags a,.posts-link,.posts-title h2 a&#39;).each(function() {
-          var labelPage = $(this).attr(&#39;href&#39;);
-          $(this).attr(&#39;href&#39;,labelPage + &#39;?max-results=<data:content/>&#39;);
-        });
-        });
-        &lt;/script&gt;
-      </b:if>
-    </b:includable>
-  </b:widget>
-  <b:widget id='HTML853' locked='false' title='Home PageNav' type='HTML' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='content'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-      <b:if cond='data:content == &quot;yes&quot;'>
-        <script type='text/javascript'> 
-        //<![CDATA[
-        $(window).bind("load", function() { 
-          $('.home .pagenavi').show();
-        });
-         //]]>
-        </script>
-      </b:if>
-    </b:includable>
-  </b:widget>
-  <b:widget id='HTML4' locked='false' title='Advertisement' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='Profile1' locked='false' title='Mengenai Saya' type='Profile'>
-    <b:widget-settings>
-      <b:widget-setting name='showaboutme'>true</b:widget-setting>
-      <b:widget-setting name='showlocation'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-    <b:if cond='data:team'> <!-- team blog profile -->
-      <ul>
-        <b:loop values='data:authors' var='i'>
-          <li><a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'><data:i.display-name/></a></li>
-        </b:loop>
-      </ul>
-
-    <b:else/> <!-- normal blog profile -->
-
-      <b:if cond='data:photo.url != &quot;&quot;'>
-        <a expr:href='data:userUrl'><img class='profile-img' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
-      </b:if>
-
-      <dl class='profile-datablock'>
-        <dt class='profile-data'>
-          <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
-            <data:displayname/>
-          </a>
-          <b:if cond='data:hasgoogleprofile'>
-            <br/>
-            <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
-          </b:if>
-        </dt>
-
-        <b:if cond='data:showlocation'>
-          <dd class='profile-data'><data:location/></dd>
-        </b:if>
-
-        <b:if cond='data:aboutme != &quot;&quot;'><dd class='profile-textblock'><data:aboutme/></dd></b:if>
-      </dl>
-      <a class='profile-link' expr:href='data:userUrl' rel='author'><data:viewProfileMsg/></a>
-    </b:if>
-
-     <b:include name='quickedit'/>
-    </div>
-  </b:includable>
-  </b:widget>
-  <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
+  <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar' version='1'>
     <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
@@ -1196,7 +964,7 @@ var Cur_Cform_Hdr='.comment_form';var Cur_Cform_Url=$('#comment-editor').attr('s
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d596428076303041690\x26blogName\x3dAsal\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://tokailah.blogspot.com/search\x26blogLocale\x3din\x26v\x3d2\x26homepageUrl\x3dhttps://tokailah.blogspot.com/\x26vt\x3d-7259277868266674061&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d3608442726518150177\x26blogName\x3dAoManga\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://aomanga-kun.blogspot.com/search\x26blogLocale\x3din\x26v\x3d2\x26homepageUrl\x3dhttps://aomanga-kun.blogspot.com/\x26vt\x3d-3591494104070958164&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -1223,8 +991,7 @@ head.appendChild(script);
 .not_found{background-color:#fcf0b0;border:1px solid #efe29c;text-align:center;padding:15px 5px;}.not_found h2{margin:0;font-size:50px;line-height:49px;color:#f3746d;text-shadow:0 0 1px #e5615a;}.not_found h3{margin:0;padding:0;color:#f3746d;text-transform:uppercase;}.not_found p{color:#333;line-height:17px;max-width:85%;margin:6px auto;}.not_found a{background-color:#4ebd4a;color:#fff;text-transform:capitalize;padding:2px 6px 3px;border-radius:3px;margin-top:2px;display:inline-block;}
 /*]]>*/
 </style>
-<div class='not_found'><h2>404!</h2><h3>Not Found</h3><p>Sorry, the page you are looking for can not be found!
-Possibility of the page has been deleted, or you misspell a URL.</p><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title'>back to main page</a></div>
+<div class='not_found'><h2>404!</h2><h3>Not Found</h3><p>Maaf, Halaman Yang anda Cari Tidak ada atau belum tersedia di blog ini .</p><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title'>back to main page</a></div>
 </b:if>
 </div><!-- END CONTENT -->
 <div class='clear'/>
@@ -1250,7 +1017,7 @@ Possibility of the page has been deleted, or you misspell a URL.</p><a expr:href
   </b:widget>
 </b:section>
 <div class='clear'/></div></div>
-<p class='credit' style='text-align:center;'>&#169; 2015 <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:blog.title/></span></a> - Description Blog,  All Right Reserved<br/><b><a href='http://waytemplates.blogspot.com/' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'>Shared by Way Templates</span></a></b></p>
+<p class='credit' style='text-align:center;'>&#169; 2017 <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:blog.title/></span></a> - blog baca manga terbaik,  All Right Reserved<br/></p>
 <div class='clear'/>
 </footer>
 <b:include data='blog' name='google-analytics'/></body></html>
